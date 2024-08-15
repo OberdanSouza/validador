@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Planilhas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #5bc0de; /* Fundo azul suave para a navbar */
+        }
+        .navbar-brand {
+            color: #ffc107 !important; /* Texto amarelo para marca */
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #5bc0de;
+            border-color: #5bc0de;
+            color: #fff;  /* Texto branco para header do card */
+        }
+        .btn-primary {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #000; /* Texto preto para o botão */
+        }
+        .btn-primary:hover {
+            background-color: #e0a800;
+            border-color: #d39e00;
+        }
+        .form-label {
+            color: #5bc0de; /* Labels azul suave */
+        }
+        .footer {
+            background-color: #5bc0de;
+            color: #fff;
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">1.0</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Upload das Planilhas</h2>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="file1" class="form-label">ERP</label>
+                                <input type="file" class="form-control-file" id="file1" name="file1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="file2" class="form-label">PBI</label>
+                                <input type="file" class="form-control-file" id="file2" name="file2" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Upload e Validar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; Validador 1.0 </p>
+        </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
